@@ -1,2 +1,3 @@
-# bootstrap-sandbox
+# Bootstrap Sandbox
+
 A sandbox Bootstrap-based library for testing and experimenting with future Bootstrap implementations.
