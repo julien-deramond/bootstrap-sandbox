@@ -31,9 +31,18 @@
     "css-rtl": "cross-env NODE_ENV=RTL postcss --config build/postcss.config.mjs --dir \"dist/css\" --ext \".rtl.css\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*.rtl.css\"",
     "css-test": "jasmine --config=scss/tests/jasmine.js",
     "dist": "npm-run-all --aggregate-output --parallel css",
-    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint"
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^8.3.2",
+    "@storybook/addon-interactions": "^8.3.2",
+    "@storybook/addon-links": "^8.3.2",
+    "@storybook/blocks": "^8.3.2",
+    "@storybook/html": "^8.3.2",
+    "@storybook/html-vite": "^8.3.2",
+    "@storybook/test": "^8.3.2",
     "clean-css-cli": "5.6.3",
     "cross-env": "7.0.3",
     "find-unused-sass-variables": "6.0.0",
@@ -43,6 +52,7 @@
     "postcss-cli": "11.0.0",
     "sass": "1.77.8",
     "sass-true": "^8.0.0",
+    "storybook": "^8.3.2",
     "stylelint": "^16.9.0",
     "stylelint-config-twbs-bootstrap": "15.0.0"
   }
