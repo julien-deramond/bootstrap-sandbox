@@ -42,10 +42,8 @@
     "postcss": "8.4.45",
     "postcss-cli": "11.0.0",
     "sass": "1.77.8",
+    "sass-true": "^8.0.0",
     "stylelint": "^16.9.0",
     "stylelint-config-twbs-bootstrap": "15.0.0"
-  },
-  "dependencies": {
-    "sass-true": "^8.0.0"
   }
 }
