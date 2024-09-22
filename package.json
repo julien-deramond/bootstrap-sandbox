@@ -1,0 +1,51 @@
+{
+  "name": "bootstrap-sandbox",
+  "version": "0.0.0",
+  "description": "A sandbox Bootstrap-based library for testing and experimenting with future Bootstrap implementations.",
+  "main": "dist/js/bootstrap-sandbox.js",
+  "module": "dist/js/bootstrap-sandbox.esm.js",
+  "sass": "scss/bootstrap-sandbox.scss",
+  "style": "dist/css/bootstrap-sandbox.css",
+  "keywords": [
+    "css",
+    "sass",
+    "mobile-first",
+    "responsive",
+    "front-end",
+    "framework",
+    "web"
+  ],
+  "author": "Julien Déramond (https//github.com/julien-deramond)",
+  "license": "MIT",
+  "scripts": {
+    "css": "npm-run-all css-compile css-prefix css-rtl css-minify",
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css scss/:dist/css/",
+    "css-lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint-*",
+    "css-lint-stylelint": "stylelint \"**/*.{css,scss}\" --cache --cache-location .cache/.stylelintcache",
+    "css-lint-vars": "fusv scss/",
+    "css-minify": "npm-run-all --aggregate-output --parallel css-minify-*",
+    "css-minify-main": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
+    "css-minify-rtl": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*rtl.css\" \"!dist/css/*.min.css\"",
+    "css-prefix": "npm-run-all --aggregate-output --parallel css-prefix-*",
+    "css-prefix-main": "postcss --config build/postcss.config.mjs --replace \"dist/css/*.css\" \"!dist/css/*.rtl*.css\" \"!dist/css/*.min.css\"",
+    "css-rtl": "cross-env NODE_ENV=RTL postcss --config build/postcss.config.mjs --dir \"dist/css\" --ext \".rtl.css\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*.rtl.css\"",
+    "css-test": "jasmine --config=scss/tests/jasmine.js",
+    "dist": "npm-run-all --aggregate-output --parallel css",
+    "lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint"
+  },
+  "devDependencies": {
+    "clean-css-cli": "5.6.3",
+    "cross-env": "7.0.3",
+    "find-unused-sass-variables": "6.0.0",
+    "jasmine": "^5.3.0",
+    "npm-run-all2": "6.2.2",
+    "postcss": "8.4.45",
+    "postcss-cli": "11.0.0",
+    "sass": "1.77.8",
+    "stylelint": "^16.9.0",
+    "stylelint-config-twbs-bootstrap": "15.0.0"
+  },
+  "dependencies": {
+    "sass-true": "^8.0.0"
+  }
+}
