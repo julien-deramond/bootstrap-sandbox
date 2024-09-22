@@ -16,3 +16,16 @@ CSS files:
 | `bootstrap-sandbox-grid.css` | `bootstrap-sandbox-grid.min.css` | `bootstrap-sandbox-grid.rtl.css` | `bootstrap-sandbox-grid.rtl.min.css` |
 | `bootstrap-sandbox-reboot.css` | `bootstrap-sandbox-reboot.min.css` | `bootstrap-sandbox-reboot.rtl.css` | `bootstrap-sandbox-reboot.rtl.min.css` |
 | `bootstrap-sandbox-utilities.css` | `bootstrap-sandbox-utilities.min.css` | `bootstrap-sandbox-utilities.rtl.css` | `bootstrap-sandbox-utilities.rtl.min.css` |
+
+
+## Sponsors
+
+<p align="center">
+  <a href="https://cdn.jsdelivr.net/gh/julien-deramond/static/sponsors.svg">
+    <img src='https://cdn.jsdelivr.net/gh/julien-deramond/static/sponsors.svg'/>
+  </a>
+</p>
+
+## License
+
+[MIT](LICENSE)
