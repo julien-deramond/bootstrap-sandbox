@@ -1,3 +1,7 @@
 /node_modules/
 /dist/
 .cache
+
+# Storybook
+*storybook.log
+/storybook-static/

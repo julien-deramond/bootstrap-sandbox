@@ -17,6 +17,10 @@ CSS files:
 | `bootstrap-sandbox-reboot.css` | `bootstrap-sandbox-reboot.min.css` | `bootstrap-sandbox-reboot.rtl.css` | `bootstrap-sandbox-reboot.rtl.min.css` |
 | `bootstrap-sandbox-utilities.css` | `bootstrap-sandbox-utilities.min.css` | `bootstrap-sandbox-utilities.rtl.css` | `bootstrap-sandbox-utilities.rtl.min.css` |
 
+## Discrepancies with Bootstrap
+
+- [Storybook](https://storybook.js.org/) is used to showcase components to make it easier to test and experiment with future Bootstrap implementations.
+  - Simply run `npm run storybook` locally to start the Storybook server.
 
 ## Sponsors
 
