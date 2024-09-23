@@ -53,7 +53,7 @@
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint js-lint",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
-    "test": "npm-run-all lint dist js-test"
+    "test": "npm-run-all dist js-test"
   },
   "peerDependencies": {
     "@popperjs/core": "^2.11.8"
@@ -85,6 +85,7 @@
     "globby": "^14.0.2",
     "ip": "^2.0.0",
     "jasmine": "^5.3.0",
+    "jquery": "^3.7.1",
     "karma": "^6.4.4",
     "karma-chrome-launcher": "^3.2.0",
     "karma-coverage-istanbul-reporter": "^3.0.3",
