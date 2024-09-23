@@ -43,17 +43,26 @@
     "@storybook/html": "^8.3.2",
     "@storybook/html-vite": "^8.3.2",
     "@storybook/test": "^8.3.2",
-    "clean-css-cli": "5.6.3",
-    "cross-env": "7.0.3",
-    "find-unused-sass-variables": "6.0.0",
+    "autoprefixer": "^10.4.20",
+    "clean-css-cli": "^5.6.3",
+    "cross-env": "^7.0.3",
+    "find-unused-sass-variables": "^6.0.0",
     "jasmine": "^5.3.0",
-    "npm-run-all2": "6.2.2",
-    "postcss": "8.4.45",
-    "postcss-cli": "11.0.0",
+    "npm-run-all2": "^6.2.2",
+    "postcss": "^8.4.45",
+    "postcss-cli": "^11.0.0",
+    "rtlcss": "^4.3.0",
     "sass": "1.77.8",
     "sass-true": "^8.0.0",
     "storybook": "^8.3.2",
-    "stylelint": "^16.9.0",
-    "stylelint-config-twbs-bootstrap": "15.0.0"
-  }
+    "stylelint": "^16.8.1",
+    "stylelint-config-twbs-bootstrap": "^15.0.0"
+  },
+  "files": [
+    "dist/{css,js}/*.{css,js,map}",
+    "js/{src,dist}/**/*.{js,map}",
+    "js/index.{esm,umd}.js",
+    "scss/**/*.scss",
+    "!scss/tests/**"
+  ]
 }
