@@ -39,7 +39,7 @@
     "js-compile-standalone": "rollup --environment BUNDLE:false --config build/rollup.config.mjs --sourcemap",
     "js-compile-standalone-esm": "rollup --environment ESM:true,BUNDLE:false --config build/rollup.config.mjs --sourcemap",
     "js-debug": "cross-env DEBUG=true npm run js-test-karma",
-    "js-lint": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives --ext .html,.js,.mjs,.md .",
+    "js-lint": "npm run dist && eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives --ext .html,.js,.mjs,.md .",
     "js-minify": "npm-run-all --aggregate-output --parallel js-minify-*",
     "js-minify-bundle": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap-sandbox.bundle.js.map,includeSources,url=bootstrap-sandbox.bundle.min.js.map\" --output dist/js/bootstrap-sandbox.bundle.min.js dist/js/bootstrap-sandbox.bundle.js",
     "js-minify-standalone": "terser --compress passes=2 --mangle --comments \"/^!/\" --source-map \"content=dist/js/bootstrap-sandbox.js.map,includeSources,url=bootstrap-sandbox.min.js.map\" --output dist/js/bootstrap-sandbox.min.js dist/js/bootstrap-sandbox.js",
@@ -53,7 +53,7 @@
     "lint": "npm-run-all --aggregate-output --continue-on-error --parallel css-lint js-lint",
     "storybook": "storybook dev -p 6006",
     "storybook:build": "storybook build",
-    "test": "npm-run-all dist js-test"
+    "test": "npm-run-all lint dist js-test"
   },
   "peerDependencies": {
     "@popperjs/core": "^2.11.8"
