@@ -5,3 +5,4 @@
 *.map binary
 
 bootstrap-sandbox.css linguist-vendored=false
+bootstrap-sandbox.js linguist-vendored=false

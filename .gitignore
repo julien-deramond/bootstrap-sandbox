@@ -1,5 +1,7 @@
 /node_modules/
 /dist/
+/js/coverage
+/js/dist/
 .cache
 
 # Storybook
