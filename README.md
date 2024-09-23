@@ -28,6 +28,10 @@ JS files:
 ## Discrepancies with Bootstrap
 
 - No `dist` or `js/dist` folders are stored in the repository. Instead, they are generated locally when running the `npm run dist` command.
+  - ```diff
+    -"js-lint": "eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives --ext .html,.js,.mjs,.md .",
+    +"js-lint": "npm run dist && eslint --cache --cache-location .cache/.eslintcache --report-unused-disable-directives --ext .html,.js,.mjs,.md .",
+    ``` 
 - [Storybook](https://storybook.js.org/) is used to showcase components to make it easier to test and experiment with future Bootstrap implementations.
   - Simply run `npm run storybook` locally to start the Storybook server.
  
