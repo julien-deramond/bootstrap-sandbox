@@ -17,8 +17,17 @@ CSS files:
 | `bootstrap-sandbox-reboot.css` | `bootstrap-sandbox-reboot.min.css` | `bootstrap-sandbox-reboot.rtl.css` | `bootstrap-sandbox-reboot.rtl.min.css` |
 | `bootstrap-sandbox-utilities.css` | `bootstrap-sandbox-utilities.min.css` | `bootstrap-sandbox-utilities.rtl.css` | `bootstrap-sandbox-utilities.rtl.min.css` |
 
+JS files:
+
+| JS File | Minified JS File |
+| --- | --- |
+| `bootstrap-sandbox.js` | `bootstrap-sandbox.min.js` |
+| `bootstrap-sandbox.bundle.js` | `bootstrap-sandbox.bundle.min.js` |
+| `bootstrap-sandbox.esm.js` | `bootstrap-sandbox.esm.min.js` |
+
 ## Discrepancies with Bootstrap
 
+- No `dist` or `js/dist` folders are stored in the repository. Instead, they are generated locally when running the `npm run dist` command.
 - [Storybook](https://storybook.js.org/) is used to showcase components to make it easier to test and experiment with future Bootstrap implementations.
   - Simply run `npm run storybook` locally to start the Storybook server.
  

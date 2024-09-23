@@ -1,27 +1,27 @@
 export default {
-  title: "Bootstrap Sandbox Components/Accordion",
+  title: 'Bootstrap Sandbox Components/Accordion',
   parameters: {
     docs: {
-      toc: true,
-    },
+      toc: true
+    }
   },
   argTypes: {
     flush: {
-      name: "Flush",
-      description: "Remove some borders and rounded corners to render accordions edge-to-edge with their parent container.",
+      name: 'Flush',
+      description: 'Remove some borders and rounded corners to render accordions edge-to-edge with their parent container.',
       control: {
-        type: "boolean",
+        type: 'boolean'
       },
-      defaultValue: false,
-    },
-  },
-};
+      defaultValue: false
+    }
+  }
+}
 
-export const Accordion = (args) => {
-  const { flush } = args;
+export const Accordion = args => {
+  const { flush } = args
   return `
 <div class="bd-example m-0 border-0 m-0 border-0">
-  <div class="accordion ${flush ? "accordion-flush" : ""}" id="accordionExample">
+  <div class="accordion ${flush ? 'accordion-flush' : ''}" id="accordionExample">
     <div class="accordion-item">
       <h2 class="accordion-header">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -63,9 +63,9 @@ export const Accordion = (args) => {
 <script type="text/javascript">
 /* global bootstrap: false */
 document.querySelectorAll('[href]').forEach(link => {link.addEventListener('click', event => {event.preventDefault()})})
-</script>`;
-};
+</script>`
+}
 
 Accordion.args = {
-  flush: false,
-};
+  flush: false
+}
