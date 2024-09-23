@@ -3,6 +3,7 @@
 /js/coverage
 /js/dist/
 .cache
+/.vscode/
 
 # Storybook
 *storybook.log
